@@ -232,12 +232,15 @@ Choose theme & download section
   color: rgb(122, 30, 30);
   font-size: 20px;
   text-align: center;
-  margin: 0;
+  margin-top:5px;
   margin-bottom: 5px;
+}
+.d-button-section{
+    text-align: center;
 }
 .download {
   border-radius: 5px;
-  margin-left: 43%;
+  margin:auto;
   margin-bottom: 10px;
   font-size: 15px;
   background-color: brown;
@@ -389,9 +392,7 @@ Choose theme & download section
   .todosec2 p {
     font-size: 20px;
   }
-  .download {
-    margin-left: 43%;
-  }
+  
   /* about section*/
   .aboutsection {
     height: fit-content;
@@ -434,9 +435,6 @@ Choose theme & download section
     width: 100%;
     height: fit-content;
   }
-  .download {
-    margin-left: 39%;
-  }
 }
 @media (max-width: 398px) {
   .header-desc h1 {
@@ -456,7 +454,5 @@ Choose theme & download section
     width: 384px;
     height: 301px;
   }
-  .download {
-    margin-left: 35%;
-  }
+
 }
