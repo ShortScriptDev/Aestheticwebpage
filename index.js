@@ -90,7 +90,7 @@ function takeshot() {
     scrollY: -window.scrollY,
     scale: 1,
   }).then(function (canvas) {
-    saveAs(canvas.toDataURL(), "ToDoList.png");
+    saveAs(canvas.toDataURL("image/jpeg"), "ToDoList.jpeg");
   });
 }
 function saveAs(uri, filename) {
