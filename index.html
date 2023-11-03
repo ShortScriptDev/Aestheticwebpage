@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aesthetic Web Page</title>
     <link rel="stylesheet" href="styles.css"/>
+    <script src= 
+"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"> 
+    </script> 
 </head>
 <body>
     <header>
@@ -14,28 +17,35 @@
                 <p>We Have Things To Do</p>
                 <h1>Create Your To Do List Easy</h1>
                 <p>Do life the right way & organize your tasks</p>
-                <button>Create To Do List</button>
+                <a href="#todosec1"><button>Create To Do List</button></a>
             </div>
         </div>
     </header>
     <main>
         <div class="todo-section">
-           <div class="todosec1"> 
+           <div class="todosec1" id="todosec1"> 
                 <h2>Start creating your to do list by filling out the section below for your first listing</h2>
                 <div class="inputs">
                 <div class="inputs-section">
-                    <input class="todo"type="text" placeholder="Type your task here"/>
-                    <input class="tododate" type="date"placeholder="Date"/>
+                    <input id="task"class="todo"type="text" placeholder="Type your task here"/>
+                    <input id="date" class="tododate" type="date"placeholder="Date"/>
                     <select class="todotype">
                         <option value=""> Choose urgency</option>
-                        <option value="morning">Urgent</option>
-                        <option value="afternoon">Not Urgent</option>
+                        <option value="Urgent">Urgent</option>
+                        <option value="Less Urgent">Less Urgent</option>
                     </select>
                 </div>
                 <div class="input-sec4"><button class="addbutton">ADD TO DO</button></div>
                 </div>
-                <ol class="todo-list">
-                </ol>
+                <div class="todo-list">
+                    <p>Urgent</p>
+                    <ol class="urgentlist">
+                    </ol>
+                    <p>Less Urgent</p>
+                    <ol class="lessurgent">
+                    </ol>
+                </div>
+                
             </div>
             <div class="todosec2">
                 <div class="themebutton">
@@ -43,11 +53,21 @@
                     <button class="theme2">Theme 2</button>
                     <button class="theme3">Theme 3</button>
                 </div>
-                <p>Choose your theme & Save your to do list</p>
-                <div class="theme-preview"></div>
+                    <p>Choose your theme & Save your to do list</p>
+                    <button class="download"onclick="takeshot()"> 
+                        Download List 
+                    </button>
+                    <div class="theme-preview" id="photo" >
+                        <div class="preview-layout">
+                            <div class="urgent-preview"></div>
+                            <div class="lessurgent-preview"></div>
+                        </div> 
+                    </div>
             </div>
-        </div>
+            <div id="output"></div> 
+        </div>    
     </main>   
-    <script src="index.js"></script>
+    <script src="index.js">
+    </script>
 </body>
 </html>
