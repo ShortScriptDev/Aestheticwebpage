@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Canvaz</title>
+    <link rel="stylesheet" href="./CSS/custom.scss" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">TaskCanvaz</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!---->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/28054/pexels-photo-28054.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/8805199/pexels-photo-8805199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/7772126/pexels-photo-7772126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!---->
+    <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        About TaskCanvaz:
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Welcome to your ultimate productivity companion! </strong>Our To-Do List
+        Generator is here to simplify your life, boost your productivity, and
+        help you achieve your goals with ease. Say goodbye to chaos and hello
+        to a well-organized life! Whether you're a busy professional, a
+        student juggling assignments, or a homemaker managing household
+        chores, our user-friendly To-Do List Generator is designed just for
+        you.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Why Choose Our To-Do List Generator?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Effortless Organization:</strong> Our intuitive interface allows you to
+                  create, edit, and manage your tasks effortlessly. Say goodbye to
+                  the hassle of scribbling down tasks on paper or struggling with
+                  complicated apps.<br/>
+                  <strong> Priority Setting:</strong> Prioritize your tasks easily. Identify urgent
+                  tasks that need immediate attention and categorize them based on
+                  importance.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        How It Works:
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Create Your List:</strong> Start by creating a new to-do list. Give it a
+        name and add tasks by typing or voice input. <br/>
+        <strong>Add Due Dates:</strong> Assign deadlines to tasks. Our To-Do List
+        Generator will send you reminders, ensuring you never miss an
+        important date. <br/>
+        <strong>Set the task priority:</strong> This helps you focus on what truly
+        matters, boosting your efficiency. <br/>
+        <strong>Download the to do list:</strong> Download your list to your device and use the markup to
+        check off the to do list or even print it off and attach it to
+        the fridge so that you can see it everyday and check the tasks
+        off. <br/>
+        <strong>Stay Organized: </strong>Enjoy the satisfaction of ticking off completed
+        tasks and watch your productivity soar. Our visual progress
+        tracker keeps you motivated.<br/>      </div>
+    </div>
+  </div>
+</div>
+    <!---->
+    <main>
+      <div class="todo-section">
+        <div class="todosec1" id="todosec1">
+          <h2>
+            Start creating your to do list by filling out the section below for
+            your first listing
+          </h2>
+          <div class="inputs">
+            <div class="inputs-section">
+              <input
+                id="task"
+                class="todo"
+                type="text"
+                placeholder="Type your task here"
+              />
+              <input
+                id="date"
+                class="tododate"
+                type="date"
+                placeholder="Date"
+              />
+              <select class="todotype">
+                <option value="">Choose urgency</option>
+                <option value="Urgent">Urgent</option>
+                <option value="Less Urgent">Less Urgent</option>
+              </select>
+            </div>
+            <div class="input-sec4">
+              <button class="addbutton">ADD TO DO</button>
+            </div>
+          </div>
+          <div class="todo-list">
+            <p>Urgent</p>
+            <ol class="urgentlist"></ol>
+            <p>Less Urgent</p>
+            <ol class="lessurgent"></ol>
+          </div>
+        </div>
+        <div class="todosec2">
+          <div class="themebutton">
+            <button class="theme1">Theme 1</button>
+            <button class="theme2">Theme 2</button>
+            <button class="theme3">Theme 3</button>
+          </div>
+          <p class="choose">Choose your theme & Save your to do list</p>
+            <div class="d-button-section">
+              <button class="download" id="downloadButton">Download List</button>
+            </div>
+          <div class="theme-preview" id="photo">
+            <div class="preview-layout">
+              <div class="urgent-preview"></div>
+              <div class="lessurgent-preview"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./JS/app.js"></script>
+  </body>
+</html>
