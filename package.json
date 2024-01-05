@@ -2,7 +2,7 @@
   "name": "aesthetic-web-page",
   "version": "1.0.0",
   "main": "index.js",
-  "source": "./src/bootstrap.html",
+  "source": "index.html",
   "scripts": {
     "dev": "parcel"
   },
