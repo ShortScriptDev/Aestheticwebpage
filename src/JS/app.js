@@ -3,6 +3,7 @@
  * GitHub handle: https://github.com/ShortScriptDev
  * https://github.com/ShortScriptDev/taskcanvaz
  * ---------------------------------------------- */
+import 'bootstrap';
 let i = 0;
 
 // Listener for add to list button
