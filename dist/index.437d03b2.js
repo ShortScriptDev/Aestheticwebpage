@@ -578,7 +578,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 /* ----------------------------------------------
  * Developed by: Devonna Howell
  * GitHub handle: https://github.com/ShortScriptDev
- * https://github.com/ShortScriptDev/Aestheticwebpage
+ * https://github.com/ShortScriptDev/taskcanvaz
  * ---------------------------------------------- */ var _bootstrap = require("bootstrap");
 let i = 0;
 // Listener for add to list button
